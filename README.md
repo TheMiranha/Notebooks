@@ -1,31 +1,40 @@
-# erb-sqlite-example
+# Notebooks
 
-[![Test](https://github.com/amilajack/erb-sqlite-example/actions/workflows/test.yml/badge.svg)](https://github.com/amilajack/erb-sqlite-example/actions/workflows/test.yml)
+Um sistema de notebooks com suporte para markdowns, feito em ReactJS e Electron.
 
-**An example of erb with native dependencies (sqlite3 in this case)**
+## 🔧 Funções
 
-## Setup
+### Criação de notebooks:
+- Crie um conjunto de notas para armazenar seus dados.
 
-```bash
-git clone https://github.com/amilajack/erb-sqlite-example.git
-cd erb-sqlite-example
-npm i
-npm start
-```
+### Criação de notes:
+- Crie suas notas com suporte para markdown
 
-## How it works
+### Preview:
+- Sistema de preview de markdowns.
 
-`sqlite3` is a native dependency that needs to be compiled before it is used (therefore it is consiered 'native dependency'). `sqlite3` and any other depencencies in `./build/app/package.json` are imported as an [externals](https://webpack.js.org/configuration/externals/), which means that webpack doesn't process them. The dependency will be imported with normal `require()` calls.
+## Feito Com
+- ReactJS
+- Electron
+- SQLite
 
-Some native dependencies have issues with how webpack bundles code. One solution to these kinds of issues is to add those native dependencies to your `./build/app/package.json`. These dependencies are automatically rebuilt against electron's node version after installing (see the postinstall script in `./build/app/package.json`). [electron-builder](https://github.com/electron-userland/electron-builder) will also rebuild dependencies just before packaging your app.
+## Instalação
+`npm install`
+## Inicialização
+`npm start`
+## Build
+`npm run package`
 
-You **must** install the dependencies as `dependencies` **and not** `devDepencencies`. Make sure to install like so for npm: `npm install my-cool-depencency` and like so for npm: `npm i my-cool-dependency`.
+## Instalador
+O instalador é encontrado no seguinte caminho: 
 
-## Notes
+> ./relase/build
 
-**These changes that were made to ERB:**
+### Contato
 
-```bash
-cd build/app
-npm i sqlite3
-```
+[![Twitter Badge](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/LuMiranha)
+[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lucas-miranda-496825237/)
+
+#### Sinta-se livre para fazer alterações e novas distribuições ❤️
+
+<p align="center">Copyright © 2022 TheMiranha</p>
